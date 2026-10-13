@@ -1,5 +1,4 @@
 # ConstructionProject
-# XTRA Construction Homepage Recreation
 
 ## 1. Project Overview
 
