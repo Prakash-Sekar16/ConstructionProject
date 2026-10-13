@@ -94,7 +94,7 @@ The files are served directly by a browser or static web server. No compilation 
 
 This project can be deployed to any static web hosting platform.
 
-### Option 1: GitHub Pages
+### 1: GitHub Pages
 
 1. Create a GitHub repository.
 2. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository.
@@ -103,6 +103,15 @@ This project can be deployed to any static web hosting platform.
 5. Select the deployment source and the branch containing the project files.
 6. Save the configuration.
 7. Open the published URL provided by GitHub Pages.
+
+### 2: Netlify
+
+1. Open Netlify and sign in.
+2. Choose the option to add a new site.
+3. Deploy by importing the GitHub repository or uploading the project folder using a supported manual deployment method.
+4. For this static website, use the project root as the publish directory.
+5. Deploy the site and open the generated URL.
+
 
 ## 7. Dependencies
 
