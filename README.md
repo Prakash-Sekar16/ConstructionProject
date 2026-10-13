@@ -94,7 +94,7 @@ The files are served directly by a browser or static web server. No compilation 
 
 This project can be deployed to any static web hosting platform.
 
-### 1: GitHub Pages
+### 1: GitHub 
 
 1. Create a GitHub repository.
 2. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository.
