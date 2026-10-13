@@ -157,7 +157,106 @@ An internet connection may be required to load external images and fonts. Availa
 - **Performance optimization:** Image optimization, caching policies, and production performance testing have not been comprehensively configured.
 - **No authentication or database:** The project does not include user accounts, server-side processing, or persistent application data.
 
-## 10. Future Improvements
+## 10. Environment Configuration Details
+
+This project is implemented using HTML, CSS, and vanilla JavaScript. It does not require environment variables or a backend server for its current functionality.
+
+### Requirements
+
+- Modern web browser
+- Visual Studio Code (recommended)
+- Live Server extension (optional)
+- Internet connection for external images and web fonts
+
+### Configuration
+
+1. Download and extract the project files.
+2. Open the project folder in Visual Studio Code.
+3. Ensure the following files are present:
+
+   ```text
+   construction-homepage/
+   ├── index.html
+   ├── styles.css
+   ├── script.js
+   └── README.md
+   ```
+
+4. Open `index.html` directly in a browser or launch it using Live Server.
+
+### Environment Variables
+
+No `.env` file or environment variables are required.
+
+| Configuration | Value |
+|---|---|
+| Application type | Static website |
+| Frontend technologies | HTML, CSS, JavaScript |
+| Development server | VS Code Live Server (optional) |
+| Backend server | Not configured |
+| Database | Not configured |
+| API keys | Not required |
+| Build tool | Not required |
+
+**Note:** If a backend, contact form service, or third-party API is added in the future, configure its credentials securely on the server side. Do not expose secret API keys in client-side JavaScript.
+
+## 11. Brief API Documentation
+
+### Overview
+
+The current project is a static frontend website and does not expose or consume a custom REST API. Navigation, project filtering, slider controls, and form validation are handled locally using JavaScript.
+
+### Available Frontend Functionality
+
+| Functionality | Description | API Endpoint |
+|---|---|---|
+| Navigation | Navigate to homepage sections | Not applicable |
+| Hero slider | Switch between hero slides | Not applicable |
+| Project filtering | Filter projects by category | Not applicable |
+| Testimonials | Navigate between testimonial slides | Not applicable |
+| Quote form | Validate user input in the browser | Not applicable |
+
+### Quote Request Form
+
+The quote request form accepts user input and performs client-side validation.
+
+**Example request fields:**
+
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210",
+  "service": "Building Construction",
+  "message": "I would like to request a construction quote."
+}
+```
+
+The JSON above illustrates a possible future backend payload. The current implementation does **not** send this payload to an API.
+
+### API Endpoint Status
+
+| Method | Endpoint | Status |
+|---|---|---|
+| POST | `/api/quotes` | Not implemented |
+| GET | `/api/projects` | Not implemented |
+| GET | `/api/services` | Not implemented |
+
+These endpoints are examples for potential future development, not working endpoints in the current project.
+
+### Future API Integration
+
+A backend could be introduced to support:
+
+- Submitting quote requests
+- Retrieving project and service information dynamically
+- Storing contact submissions in a database
+- Sending confirmation emails
+- Providing server-side input validation
+
+If implemented, the API should document its base URL, authentication requirements, request and response formats, HTTP status codes, validation rules, and error responses.
+
+## 12. Future Improvements
 
 - Convert the static implementation into a reusable React application.
 - Add a Vite-based development and production build workflow.
