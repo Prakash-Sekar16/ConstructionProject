@@ -64,7 +64,7 @@ The goal is to reproduce the reference website's layout, visual design, sections
 From PowerShell, navigate to the project directory and run:
 
 ```powershell
-Start-Process .\index.html
+Start .\index.html
 ```
 
 ### Option 2: Use Visual Studio Code Live Server
